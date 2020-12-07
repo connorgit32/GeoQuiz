@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:ignore="MissingDefaultResource">
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,17 +34,38 @@
                 android:text="@string/button_false"
                 android:id="@+id/false_button"/>
 
+
         </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_next"
+            android:id="@+id/next_button"
+            android:drawableEnd="@drawable/arrow_right"/>
 
     </LinearLayout>
 
-    <Button
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_next"
-        android:id="@+id/next_button"
-        android:drawableEnd="@drawable/arrow_right"
-        android:layout_gravity="bottom|end"/>
+        android:orientation="horizontal"
+        android:layout_gravity="bottom|center">
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cheat_button"
+            android:id="@+id/cheat_button"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
 
 </FrameLayout>
